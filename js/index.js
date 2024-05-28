@@ -2,7 +2,11 @@ var signInInfo = Array.from(document.querySelectorAll(".signin input"));
 var login = document.querySelector(".signin button");
 var msg = document.querySelector("#msg");
 // Data Storage
-var checkList = JSON.parse(localStorage.getItem("emails"));
+if (localStorage.getItem("emails") == null) {
+  checkList = [];
+} else {
+  checkList = JSON.parse(localStorage.getItem("emails"));
+}
 // Login
 login.addEventListener("click", function () {
   for (var i = 0; i < checkList.length; i++) {
