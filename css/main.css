@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #24353f;
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 40px;
+  color: rgb(23, 162, 184);
+}
+.shadow-shape {
+  box-shadow: -5px 2px 54px -9px rgb(0, 0, 0) !important;
+}
+.con {
+  width: 80%;
+}
+.con input {
+  background-color: transparent !important;
+  color: white !important;
+  margin-block: 15px;
+  box-shadow: none !important;
+}
+.con input::placeholder {
+  color: #b6b6b6 !important;
+}
+.con button:hover {
+  color: white;
+}
+.con a:hover {
+  text-decoration: underline !important;
+}
+/* Home nav-button */
+.b-sty {
+  border: 1px rgba(255, 255, 255, 0.2) solid;
+  padding-block: 8px;
+  
+}
+.b-sty:focus {
+  border: white 2px solid;
+  box-shadow: none;
+}
